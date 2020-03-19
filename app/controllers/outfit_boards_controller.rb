@@ -1,0 +1,2 @@
+class OutfitBoardsController < ApplicationController
+end
