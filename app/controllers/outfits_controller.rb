@@ -1,2 +1,2 @@
-class OufitsController < ApplicationController
+class OutfitsController < ApplicationController
 end
