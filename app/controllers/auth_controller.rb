@@ -1,12 +1,12 @@
 class AuthController < ApplicationController
     def create
-        byebug
+        # byebug
         user = User.find_by(username: auth_params[:username])
         if user && user.authenticate(auth_params[:password])
           # issue that user a token\
           token = issue_token(user)
-          render json: {user: user, jwt: token}
-        #   render json: {user: ActiveModelSerializers::SerializableResource.new(user), jwt: token}
+        #   render json: {user: user, jwt: token}
+          render json: {user: ActiveModelSerializers::SerializableResource.new(user), jwt: token}
         else
           render json: {error: 'That user could not be found'}, status: 401
         end
