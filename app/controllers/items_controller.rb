@@ -1,5 +1,10 @@
 class ItemsController < ApplicationController
 
+    def index
+        items = Item.all
+        render json: items
+    end
+
     def create
         item = Item.new(item_params)
         if item.save
