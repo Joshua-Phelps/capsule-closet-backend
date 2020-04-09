@@ -43,3 +43,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'active_model_serializers'
 gem 'jwt'
 gem 'figaro'
+gem 'carrierwave', '~> 2.0'
+gem 'fog', '~> 1.38'
+gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'

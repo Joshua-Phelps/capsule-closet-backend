@@ -6,7 +6,10 @@ class ItemsController < ApplicationController
     end
 
     def create
-        item = Item.new(item_params)
+        # byebug
+        item = Item.new(category: params[:category], sub_category: params[:sub_category], color: params[:color], size: params[:size], brand: params[:brand], user_id: params[:user_id].to_i)
+        item.avatar = params[:image]
+        
         if item.save
             render json: item
         else
@@ -17,6 +20,6 @@ class ItemsController < ApplicationController
     private 
 
     def item_params
-        params.require(:item).permit(:category, :sub_category, :color, :size, :brand, :user_id, :image)
+        params.require(:item).permit(:category, :sub_category, :color, :size, :brand, :user_id, :image, :avatar)
     end
 end
