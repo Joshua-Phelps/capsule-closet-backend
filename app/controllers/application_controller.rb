@@ -4,26 +4,34 @@ class ApplicationController < ActionController::API
   end
   
   def current_user
-  @user ||= User.find_by(id: user_id)
+  	@user ||= User.find_by(id: user_id)
   end
 
   def token
-  request.headers['Authorization']
+  	request.headers['Authorization']
   end
 
   def decoded_token
   begin
-      JWT.decode(token, ENV['JWT_SECRET_KEY'], true, { :algorithm => ENV['JWT_ALG'] })
+    JWT.decode(token, ENV['JWT_SECRET_KEY'], true, { :algorithm => ENV['JWT_ALG'] })
   rescue JWT::DecodeError
-      [{error: "Invalid Token"}]
+    [{error: "Invalid Token"}]
   end
   end
 
   def user_id
-  decoded_token.first['user_id']
+  	decoded_token.first['user_id']
   end
 
   def logged_in?
-  !!current_user
+  	!!current_user
   end
+
+	def before_filter
+		
+    puts "***"
+    puts params.inspect
+    puts request.body.string        
+    puts "***"
+  end 
 end

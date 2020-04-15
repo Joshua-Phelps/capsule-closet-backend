@@ -17,7 +17,7 @@ User.destroy_all
 user = User.create(username: 'first_user', password: 'test', email: 'email@gmail.com')
 
 # items
-item1 = Item.create(category: 'some category', sub_category: 'sub', color: 'red', size: 'small', brand: 'nike', user_id: user.id, image: 'image')
+# item1 = Item.create(category: 'some category', sub_category: 'sub', color: 'red', size: 'small', brand: 'nike', user_id: user.id, image: 'image')
 
 #tops
 item2 = Item.create(category: 'Tops', sub_category: 'Tank Shirt', color: 'white', size: 'small', brand: 'Amazon', user_id: user.id, image: 'https://images-na.ssl-images-amazon.com/images/I/71RsYRySFZL._UY606_.jpg')

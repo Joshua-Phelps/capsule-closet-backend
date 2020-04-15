@@ -1,15 +1,13 @@
 class ItemsController < ApplicationController
+    before_action :before_filter
 
     def index
         items = Item.all
         render json: items
     end
 
-    def create
-        # byebug
-        item = Item.new(category: params[:category], sub_category: params[:sub_category], color: params[:color], size: params[:size], brand: params[:brand], user_id: params[:user_id].to_i)
-        item.avatar = params[:image]
-        
+    def create  
+        item = Item.new(item_params)  
         if item.save
             render json: item
         else
