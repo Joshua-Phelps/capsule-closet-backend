@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-    before_action :before_filter
+
 
     def index
         items = Item.all
@@ -7,6 +7,7 @@ class ItemsController < ApplicationController
     end
 
     def create  
+        byebug
         item = Item.new(item_params)  
         if item.save
             render json: item

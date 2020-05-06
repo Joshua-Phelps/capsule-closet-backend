@@ -31,7 +31,7 @@ item9 = Item.create(category: 'Tops', sub_category: 'Blouse', color: 'red', size
 
 # bottoms
 item10 = Item.create(category: 'Bottoms', sub_category: 'Skinny Jeans', color: 'dark blue', size: 'small', brand: 'Sevens', user_id: user.id, image: 'https://di2ponv0v5otw.cloudfront.net/posts/2019/03/26/5c9abb21819e905c41c89d84/m_5cf5498aadb58d43afc7b01e.jpg')
-item11 = Item.create(category: 'Bottoms', sub_category: 'Black Pants', color: 'black', size: 'small', brand: 'Macys', user_id: user.id, image: 'https://slimages.macysassets.com/is/image/MCY/products/9/optimized/10024439_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$')
+item11 = Item.create(category: 'Bottoms', sub_category: 'Black Pants', color: 'black', size: 'small', brand: 'Macys', user_id: user.id, image: 'https://slimages.macysassets.com/is/image/MCY/products/9/optimized/10024439_fpx.tif?op_sharpen=1&wid=500&hei=613&fit=fit,1&$filtersm$') 
 item12 = Item.create(category: 'Bottoms', sub_category: 'Leggings', color: 'black', size: 'small', brand: 'Target', user_id: user.id, image: 'https://target.scene7.com/is/image/Target/GUEST_60774d13-e124-458a-9116-f83ccdf9b7a2?wid=488&hei=488&fmt=pjpeg')
 item13 = Item.create(category: 'Bottoms', sub_category: 'Shorts', color: 'light blue', size: 'small', brand: 'Rei', user_id: user.id, image: 'https://www.rei.com/media/product/1477670013')
 item14 = Item.create(category: 'Bottoms', sub_category: 'Skirts', color: 'grey', size: 'medium', brand: 'ASOS', user_id: user.id, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRNGagze-SVbL_DPEjLe-0sTj0h-KPGJ9ZkgUXOnUe9kY-zVPVdL2HZV1MkIw3Ho97h4f8sJFqd&usqp=CAc')
