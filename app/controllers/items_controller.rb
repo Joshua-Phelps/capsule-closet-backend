@@ -8,6 +8,7 @@ class ItemsController < ApplicationController
 
     def create  
    
+        # byebug
         item = Item.new(item_params)  
         if item.save
             render json: item
