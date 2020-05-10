@@ -6,6 +6,7 @@ class AuthController < ApplicationController
           # issue that user a token\
           token = issue_token(user)
         #   render json: {user: user, jwt: token}
+          
           render json: {user: ActiveModelSerializers::SerializableResource.new(user), jwt: token}
         else
           render json: {error: 'That user could not be found'}, status: 401
