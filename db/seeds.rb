@@ -73,6 +73,13 @@ outfit3 = Outfit.create(name: 'Outfit 3', user_id: user.id)
 
 #boards
 board = Board.create(name: 'Fall', user_id: user.id)
+# board2 = Board.create(name: 'Winter', user_id: user.id)
+# board3 = Board.create(name: 'Spring', user_id: user.id)
+# board4 = Board.create(name: 'Summer', user_id: user.id)
+
+# board5 = Board.create(name: 'Work', user_id: user.id)  
+# board6 = Board.create(name: 'Date Night', user_id: user.id)  
+
 
 # itemoutfits
 ItemOutfit.create(item_id: item2.id, outfit_id: outfit1.id)
