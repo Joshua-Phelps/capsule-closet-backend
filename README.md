@@ -9,6 +9,7 @@ The main goal of this project was to familiarize ourseleves with
 - Material UI 
 - Amazon S3
 - Reducers 
+- CarrierWave
 
 
 ## Screenshots
@@ -49,6 +50,8 @@ This project is currently in development.
 
 ## Contribute
 If you'd like to contribute please send an email to Josh at jugtuttle@gmail.com
+
+- [Frontend Repo](https://github.com/Joshua-Phelps/capsule-closet-client)
 
 ## Credits
 - [Josh Phelps](https://joshua-phelps.netlify.app/)
