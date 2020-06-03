@@ -51,7 +51,7 @@ This project is currently in development.
 ## Contribute
 If you'd like to contribute please send an email to Josh at jugtuttle@gmail.com
 
-- [Frontend Repo](https://github.com/Joshua-Phelps/capsule-closet-client)
+- [Backend Repo](https://github.com/Joshua-Phelps/capsule-closet-client)
 
 ## Credits
 - [Josh Phelps](https://joshua-phelps.netlify.app/)
